@@ -56,7 +56,7 @@ function nextRound() {
 
     tileContainer.classList.add('unclickable');
 
-    info.textContent = 'Wait for the computer';
+    info.textContent = 'Computer turn';
 
     heading.textContent = `Level ${level} `;
 
