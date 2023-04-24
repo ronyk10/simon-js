@@ -1,0 +1,191 @@
+html {
+    background-image: url('/static/img/background.jpg');
+    background-attachment: fixed;
+}
+
+/* 
+body {
+    height: 100vh;
+
+} */
+
+h1 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+/* .flex0 {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    bottom: 0;
+} */
+
+.btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+
+.btn {
+    justify-content: center;
+    align-self: center;
+    /* Add this line to center the button horizontally */
+    padding: 8px 16px;
+    /* Update the padding values to reduce the size of the button */
+    font-size: 18px;
+    /* Update the font size to adjust the button text */
+
+}
+
+
+
+.video-game-button {
+    text-shadow: 1px 1px pink, -1px -1px maroon;
+
+    line-height: 1.5em;
+    text-align: center;
+    display: inline-block;
+    width: 1.5em;
+    -webkit-border-radius: .75em;
+    -moz-border-radius: .75em;
+    -o-border-radius: .75em;
+    border-radius: .75em;
+    background-color: red;
+    -webkit-box-shadow: 0 .2em maroon;
+    -moz-box-shadow: 0 .2em maroon;
+    -o-box-shadow: 0 .2em maroon;
+    box-shadow: 0 .2em maroon;
+    color: red;
+    margin: 5px;
+    background-color: red;
+    background-image: -o-linear-gradient(left top, pink 3%, red 22%, maroon 99%);
+    background-image: -moz-linear-gradient(left top, pink 3%, red 22%, maroon 99%);
+    background-image: -webkit-linear-gradient(left top, pink 3%, red 22%, maroon 99%);
+    background-image: linear-gradient(left top, pink 3%, red 22%, maroon 99%);
+    cursor: pointer;
+    padding: 8px 16px;
+}
+
+.start-btn {
+    width: 25%;
+    text-align: center;
+    display: inline-block;
+    margin: 2px;
+    /* ajuster la valeur de la marge */
+    font-weight: bold;
+    padding: 4px 8px;
+    /* ajuster la valeur du rembourrage */
+    background-color: lightgray;
+    text-shadow: -1px -1px black, 1px 1px white;
+    color: gray;
+    -webkit-border-radius: 5px;
+    /* ajuster la valeur du rayon de bordure */
+    -moz-border-radius: 5px;
+    /* ajuster la valeur du rayon de bordure */
+    -o-border-radius: 5px;
+    /* ajuster la valeur du rayon de bordure */
+    border-radius: 5px;
+    /* ajuster la valeur du rayon de bordure */
+    box-shadow: 0 .1em gray;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.start-btn:active {
+    box-shadow: none;
+    position: relative;
+    top: .1em;
+}
+
+.box {
+    width: 320px;
+    margin: 10rem auto;
+    padding-top: 10rem;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 2.5rem;
+    border: 2px solid #ddd;
+    border-radius: 20px/50px;
+}
+
+.button {
+    font-size: 1.3rem;
+    padding: 1rem;
+    color: #fff;
+    border: 2px solid white;
+    border-radius: 20px/50px;
+    text-decoration: none;
+    cursor: pointer;
+    background: rgba(10, 149, 147, 0.25);
+    transition: all 0.3s ease-out;
+}
+
+.button:hover {
+    background: white;
+    color: #333;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity .4s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    background-image: url("/static/img/BackPopup.jpg");
+    margin: 6rem auto;
+    padding: 2rem;
+    border-radius: 15px;
+    width: 28%;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+}
+
+.popup .cross {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s ease;
+    color: #333;
+}
+
+.popup .cross:hover {
+    color: white;
+}

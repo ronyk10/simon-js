@@ -5,10 +5,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SimonJS - KLOCK Rony</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./static/img/box.png">
+    <title>SimonJS - KLOCK</title>
 </head>
 
 <body>
+    <div class="container">
+        <h1>Welcome to my Super Simon game !</h1>
+        <!-- <div class="middle">
+            <img src="/static/img/perso.webp">
+        </div> -->
+
+        <!-- <div class="flex0"> -->
+        <div class="btn-container">
+            <!-- <span class='start-btn'><a href="boxxle.html">START</a></span> <br>
+            <span class='start-btn'> <a href="#popup">RULES</a></span> -->
+            <div class='start-btn' onclick="location.href='simon.html';">START</div>
+            <div class='start-btn' onclick="location.href='#popup';">RULES</div>
+
+
+            <div id="popup" class="overlay">
+                <div class="popup">
+                    <h2>Rules</h2>
+                    <a href="#" class="cross">&times;</a>
+                    <p>Objective: The player must move all the crates or objects in the level to their target locations
+                        to
+                        complete the level. <br>
+
+                        <br> Moves: The player can move the main character (usually represented by a character or an
+                        object)
+                        to
+                        push the crates in four directions (up, down, left, right). Crates can only be pushed if the
+                        space
+                        in front of them is clear.<br>
+
+                        <br> Obstacles: The player must avoid obstacles such as walls or other objects that can block
+                        the
+                        movements of the crates or the main character.<br>
+
+                        <br>Target locations: The crates must be moved to specific target locations on the game board.
+                        Once
+                        all
+                        the crates are correctly placed on the target locations, the level is considered successful.<br>
+
+                        <br>Have fun !<br>
+                    </p>
+                </div>
+            </div>
+            <!-- </div> -->
+        </div>
+    </div>
 
 </body>
 
